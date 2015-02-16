@@ -3,7 +3,7 @@ language: python
 env:
   global:
     - PIP_WHEEL_DIR=$HOME/.cache/pip/wheels
-    - PIP_FIND_LINKS=$HOME/.cache/pip/wheels
+    - PIP_FIND_LINKS=file://$HOME/.cache/pip/wheels
 
 python:
   - "2.6"
