@@ -1,5 +1,7 @@
 language: python
 
+sudo: false
+
 env:
   global:
     - PIP_WHEEL_DIR=$HOME/.cache/pip/wheels
