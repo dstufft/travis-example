@@ -20,4 +20,4 @@ python:
 install:
   - "pip install -r requirements.txt"
 
-script: find $HOME/cache/pip -print
+script: find $HOME/.cache/pip -print
