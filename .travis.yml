@@ -3,8 +3,10 @@ language: python
 sudo: false
 
 cache:
-  # The cache: pip support does not appear to be working, so we'll just cache
-  # the pip cache directory ourselves.
+  # Apparently if you override the install command that silently disables the
+  # cache: pip support. This is less than ideal and I've opened up
+  # travis-ci/travis-ci#3239 to hopefully get that addressed. For now I'll
+  # manually add the pip cache directory to the build cache.
   directories:
     - ~/.cache/pip
 
