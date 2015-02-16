@@ -2,7 +2,11 @@ language: python
 
 sudo: false
 
-cache: pip
+cache:
+  # The cache: pip support does not appear to be working, so we'll just cache
+  # the pip cache directory ourselves.
+  directories:
+    - ~/.cache/pip
 
 env:
   global:
