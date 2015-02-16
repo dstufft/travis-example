@@ -2,8 +2,7 @@ language: python
 
 sudo: false
 
-cache:
-  - pip
+cache: pip
 
 env:
   global:
